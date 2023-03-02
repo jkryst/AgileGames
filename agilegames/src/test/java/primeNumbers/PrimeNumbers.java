@@ -6,7 +6,7 @@ public class PrimeNumbers {
         int numOfPrimes = 0;
 
         if(x<3) {
-            return 0;
+            return numOfPrimes;
         }
 
         for(int i = 2; i<x; i++) {
