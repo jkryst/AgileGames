@@ -16,6 +16,7 @@ class PeselTest {
 
         //invalid pesel
         int[] pesel3 = {1,3,4,5,6,4,5,3,5,6,5};
+        int[] pesel4 = {1,3,4,5,6,4,5,3,5,6};
 
         Assert.assertTrue(pesel.pesel(pesel1));
         Assert.assertTrue(pesel.pesel(pesel2));
