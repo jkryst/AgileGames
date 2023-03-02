@@ -22,6 +22,7 @@ class AlphaLettersTest {
         char[] result = {'k','w','e','l','u'};
         assertArrayEquals(result, AlphaLetters.alphaLetters(testTab));
         assertEquals(0,AlphaLetters.alphaLetters(new char[0][]).length);
+        assertNotEquals('l',AlphaLetters.alphaLetters(testTab)[4]);
 
     }
 }
