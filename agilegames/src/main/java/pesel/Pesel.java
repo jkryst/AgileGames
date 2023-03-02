@@ -10,7 +10,8 @@ public class Pesel {
 
         if (numbers[4]>3) return false;
 
-        int controlSum = (numbers[0]*1)%10+
+        int controlSum =
+                (numbers[0]*1)%10+
                 (numbers[1]*3)%10+
                 (numbers[2]*7)%10+
                 (numbers[3]*9)%10+
@@ -18,11 +19,11 @@ public class Pesel {
                 (numbers[5]*3)%10+
                 (numbers[6]*7)%10+
                 (numbers[7]*9)%10+
-                (numbers[9]*1)%10+
-                (numbers[10]*3)%10;
+                (numbers[8]*1)%10+
+                (numbers[9]*3)%10;
         int controlDigit = 10-controlSum%10;
 
-        if (numbers[11]!=controlDigit) return false;
+        if (numbers[10]!=controlDigit) return false;
 
         return true;
     }
