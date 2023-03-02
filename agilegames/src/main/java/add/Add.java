@@ -3,7 +3,7 @@ package add;
 public class Add {
 
     public static void main(String[] args) {
-        int x = 3;
+        int x = -7;
         int y = 5;
         System.out.println(add(x, y));
     }

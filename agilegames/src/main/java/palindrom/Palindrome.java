@@ -11,6 +11,10 @@ public class Palindrome {
 
 
     public static boolean palindrome(char[] word){
+
+        if (word.length == 0){
+            return false;
+        }
         for (int i = 0; i < word.length/2; i++) {
             if (word[i] != word[word.length-1-i])
                 return false;
